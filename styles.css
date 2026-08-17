@@ -324,6 +324,10 @@ p {
   max-width: 520px;
 }
 
+.portrait-figure {
+  max-width: 360px;
+}
+
 .wide-figure img {
   aspect-ratio: 4 / 1;
   object-fit: cover;
@@ -405,6 +409,10 @@ p {
 
   .inline-figure {
     max-width: none;
+  }
+
+  .portrait-figure {
+    max-width: 420px;
   }
 }
 
