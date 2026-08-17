@@ -2,6 +2,16 @@
 
 Static personal academic website built with plain HTML and CSS.
 
+## Structure
+
+- `index.html` - about, CV, and interests
+- `research.html` - research projects
+- `projects.html` - selected software projects
+- `experience.html` - professional and research experience
+- `teaching.html` - teaching work
+- `styles.css` - shared styles
+- `assets/` - images and documents
+
 ## Local Preview
 
 Run a local static server from the repository root:
