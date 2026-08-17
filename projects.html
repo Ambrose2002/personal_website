@@ -19,29 +19,42 @@
       </nav>
     </header>
 
-    <main>
-      <section class="section page-intro">
-        <h1>Selected Projects</h1>
-        <p>
-          A small selection of systems, programming language, backend, mobile, and full-stack work.
-        </p>
-      </section>
+    <main class="page-shell">
+      <aside class="profile-card" aria-label="Profile">
+        <img class="profile-photo" src="assets/images/headshot.jpg" alt="Headshot of Ambrose Blay.">
+        <p class="profile-name">Ambrose Blay</p>
+        <p class="profile-title">Computer Science student at Cornell University</p>
+        <ul class="profile-links">
+          <li><a href="mailto:ab2838@cornell.edu"><svg class="profile-icon icon-stroke" aria-hidden="true"><use href="assets/icons.svg#mail"></use></svg>Email</a></li>
+          <li><a href="https://github.com/Ambrose2002"><svg class="profile-icon icon-fill" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg>GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ambrose-blay/"><svg class="profile-icon icon-fill" aria-hidden="true"><use href="assets/icons.svg#linkedin"></use></svg>LinkedIn</a></li>
+          <li><a href="assets/docs/Ambrose_Blay_Resume.pdf" target="_blank" rel="noopener"><svg class="profile-icon icon-stroke" aria-hidden="true"><use href="assets/icons.svg#document"></use></svg>CV</a></li>
+        </ul>
+      </aside>
 
-      <section class="section projects-section">
-        <div class="project-grid">
-          <article class="project-card">
-            <p class="project-number">01</p>
-            <h3>Ambra Programming Language</h3>
-            <p class="entry-meta">C++17, CMake, compiler design</p>
-            <p>
-              Designed and implemented a statically typed compiled programming language with a
-              custom lexer, recursive descent parser, type checker, intermediate representation,
-              and stack-based virtual machine.
-            </p>
-            <p class="project-link"><a href="https://github.com/Ambrose2002/ambra-lang">View project</a></p>
-          </article>
+      <div class="page-content">
+        <section class="section page-intro">
+          <h1>Selected Projects</h1>
+          <p>
+            A small selection of systems, programming language, backend, mobile, and full-stack work.
+          </p>
+        </section>
 
-          <article class="project-card">
+        <section class="section projects-section">
+          <div class="project-grid">
+            <article class="project-card">
+              <p class="project-number">01</p>
+              <h3>Ambra Programming Language</h3>
+              <p class="entry-meta">C++17, CMake, compiler design</p>
+              <p>
+                Designed and implemented a statically typed compiled programming language with a
+                custom lexer, recursive descent parser, type checker, intermediate representation,
+                and stack-based virtual machine.
+              </p>
+              <p class="project-link"><a href="https://github.com/Ambrose2002/ambra-lang">View project</a></p>
+            </article>
+
+            <article class="project-card">
             <p class="project-number">02</p>
             <h3>Distributed Proxy System</h3>
             <p class="entry-meta">Python, TCP networking, caching, load balancing</p>
@@ -50,9 +63,9 @@
               load balancing, active health checks, failure handling, and node-level metrics.
             </p>
             <p class="project-link"><a href="https://github.com/Ambrose2002/distributed-proxy">View project</a></p>
-          </article>
+            </article>
 
-          <article class="project-card">
+            <article class="project-card">
             <p class="project-number">03</p>
             <h3>SyncFlix</h3>
             <p class="entry-meta">Node.js, Express, React, MongoDB, Socket.io</p>
@@ -63,9 +76,9 @@
             <p class="project-link">
               <a href="https://github.com/Ambrose2002/SyncFlix_fullStack">SyncFlix repository</a>
             </p>
-          </article>
+            </article>
 
-          <article class="project-card">
+            <article class="project-card">
             <p class="project-number">04</p>
             <h3>Fitr</h3>
             <p class="entry-meta">Swift, Spring Boot, PostgreSQL, JWT</p>
@@ -73,9 +86,9 @@
               Built a fitness tracking application with a Swift frontend and Spring Boot backend.
             </p>
             <p class="project-link"><a href="https://github.com/Ambrose2002/fitr">View project</a></p>
-          </article>
+            </article>
 
-          <article class="project-card">
+            <article class="project-card">
             <p class="project-number">05</p>
             <h3>UniNav</h3>
             <p class="entry-meta">React, Flask, SQLAlchemy, BeautifulSoup</p>
@@ -84,9 +97,9 @@
               at Cornell, backed by scraped course schedule data and a Flask API.
             </p>
             <p class="project-link"><a href="https://github.com/Ambrose2002/UniNav">View project</a></p>
-          </article>
+            </article>
 
-          <article class="project-card">
+            <article class="project-card">
             <p class="project-number">06</p>
             <h3>CodeClip</h3>
             <p class="entry-meta">Chrome Extension MV3, React, Flask, SQLite, semantic search</p>
@@ -95,9 +108,10 @@
               the web, including a local dashboard and semantic search backend.
             </p>
             <p class="project-link"><a href="https://github.com/Ambrose2002/CodeClip">View project</a></p>
-          </article>
-        </div>
-      </section>
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
