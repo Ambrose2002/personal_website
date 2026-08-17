@@ -230,6 +230,18 @@ p {
   object-position: center 58%;
 }
 
+.site-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
 @media (max-width: 760px) {
   .site-nav {
     gap: 0.85rem 1.25rem;
