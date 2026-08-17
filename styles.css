@@ -357,6 +357,31 @@ p {
   object-position: center 58%;
 }
 
+.astro-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.astro-gallery figure {
+  margin: 0;
+}
+
+.astro-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  object-fit: cover;
+}
+
+.astro-gallery figcaption {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .site-footer {
   max-width: 900px;
   margin: 0 auto;
@@ -401,6 +426,10 @@ p {
 
   .interest-photo {
     max-width: 420px;
+  }
+
+  .astro-gallery {
+    grid-template-columns: 1fr;
   }
 
   .figure-grid {
