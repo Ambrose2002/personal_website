@@ -105,6 +105,7 @@ a:focus {
 }
 
 .banner {
+  position: relative;
   height: min(46vw, 460px);
   min-height: 260px;
   margin: 0;
@@ -118,6 +119,49 @@ a:focus {
   height: 100%;
   object-fit: cover;
   object-position: center 45%;
+}
+
+.slideshow .slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: banner-fade 24s infinite;
+}
+
+.slideshow .slide-one {
+  animation-delay: 0s;
+}
+
+.slideshow .slide-two {
+  animation-delay: 8s;
+  object-position: center 52%;
+}
+
+.slideshow .slide-three {
+  animation-delay: 16s;
+  object-position: center 45%;
+}
+
+@keyframes banner-fade {
+  0% {
+    opacity: 0;
+  }
+
+  6% {
+    opacity: 1;
+  }
+
+  31% {
+    opacity: 1;
+  }
+
+  39% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .about-section {
@@ -361,5 +405,15 @@ p {
 
   .inline-figure {
     max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slideshow .slide {
+    animation: none;
+  }
+
+  .slideshow .slide-one {
+    opacity: 1;
   }
 }
