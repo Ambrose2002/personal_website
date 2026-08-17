@@ -219,6 +219,43 @@ p {
   font-size: 0.95rem;
 }
 
+.figure-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.entry-figure {
+  margin: 1.25rem 0;
+}
+
+.figure-grid .entry-figure {
+  margin: 0;
+}
+
+.entry-figure img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+}
+
+.entry-figure figcaption {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.inline-figure {
+  max-width: 520px;
+}
+
+.wide-figure img {
+  aspect-ratio: 4 / 1;
+  object-fit: cover;
+}
+
 .interests-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 320px;
@@ -287,5 +324,13 @@ p {
 
   .interest-photo {
     max-width: 420px;
+  }
+
+  .figure-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inline-figure {
+    max-width: none;
   }
 }
