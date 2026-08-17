@@ -293,24 +293,33 @@ p {
 }
 
 .projects-section {
-  max-width: 1100px;
+  max-width: 920px;
 }
 
-.project-list-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem 2.75rem;
+.project-list {
+  border-top: 1px solid var(--rule);
 }
 
 .project-item {
-  padding-top: 1rem;
-  padding-bottom: 0;
-  border-top: 1px solid var(--rule);
-  border-bottom: 0;
+  padding: 1.55rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.project-item h3 {
+  font-size: 1.35rem;
+}
+
+.project-item p {
+  max-width: 74ch;
 }
 
 .project-item p:last-child {
   margin-bottom: 0;
+}
+
+.project-link {
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 .figure-grid {
@@ -426,11 +435,6 @@ p {
 
   .figure-grid {
     grid-template-columns: 1fr;
-  }
-
-  .project-list-grid {
-    grid-template-columns: 1fr;
-    gap: 1.75rem;
   }
 
   .inline-figure {
